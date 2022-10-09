@@ -4,94 +4,118 @@
 <head>
     <meta chacrset="UTF-8">
     <title>Yuliia CV</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <table cellspacing="15">
-<tr>
-    <td> <img src="avatar.jpg"  alt="Йоркширський тер'єр міні" width="200"></td>
-    <td><h1>Степанова Юлія</h1>
-    <p> <em> Я засновник однойменного <strong>Ютуб канала</strong>  </em></p>
-    <p>Я люблю подорожувати і танцювати</p></td>
-</tr>
-    </table>
-    <hr>
-    <h2>Мої соціальні мережі</h2>
-    <ul type="square">
-        <li> <a href="https:instagram.com/yulyashakotenok83"  target="_blank" > Instagram</a> </li>
-        <li> <a href="https://t.me/yuliiastep" target="_blank" > телеграм</a> </li>
-    </ul>
-    <hr>
-    <h2>Моє хобі</h2>
-    <ol>
-        <li>Танці</li>
-        <li>Їзда верхи</li>
-        <li>Спорт</li>
-        <li>Подорожі</li>
-    </ol>
+    <div class="conteiner">  <!-- весь контент -->
+        <div class="info">
+                <img src="avatar.jpg"  alt="Йоркширський тер'єр міні" width="200" class="avatar">
+             
+                <div class="info-text">   
+                <h1>Степанова Юлія</h1>
+                <p> Я засновник однойменного <strong>Ютуб канала</strong> </p>
+                <p>Я люблю подорожувати та танцювати</p></td>
+        
+                <h4>Мої соціальні мережі</h4>
+                <a href="https:instagram.com/yulyashakotenok83"  target="_blank" > Instagram</a>
+                |
+                <a href="https://t.me/yuliiastep" target="_blank" > Telegram</a> 
+             </div>
+        </div>
 
-    <hr>
-
-    
-
-
-
-     <h2>Досвід роботи</h2>
-     <table>
-        <tr>
-            <th>Company</th>
-            <th>Position</th>
-            <th>Year</th>
-        </tr>
-        <tr>
-            <td>FinSpace Group</td>
-            <td>Accountant</td>
-            <td>March 2021 - November 2021</td>
-        </tr>
-        <tr>
-            <td>Ferozit LLC</td>
-            <td>Accountant</td>
-            <td>June 2014 - December 2020</td></tr>
-        <tr>
-            <td>Lviv higher vocational school of design and construction</td>
-            <td>Accountant</td>
-            <td>March 2010 - September 2010</td></tr>
-        </tr>
-     </table>
-
-     <hr>
-
-    <h2>Моє хобі</h2>
-    <a href="yuotube.html" target="_blank">Повний список</a>
-
-    <hr>
-
-    <h2>Зв'язатися зі мною</h2>
-
-    <form action="/"> <!--кнопка відправляє на нашу ж сторінку-->
+        <div class="card bg-yellow">
+            <h2>Моє хобі</h2>
+            <ol class="list">
+                <li>Танці</li>
+                <li>Їзда верхи</li>
+                <li>Спорт</li>
+                <li>Подорожі</li>
+            </ol>
+        </div>
 
         
-        <label for="name">Ваше імя:</label>
-        <input type="text" id="name" placeholder="Введите ваше імя...">
-    
-        <br>
+        <div class="card bg-green">
+                <h2>Досвід роботи</h2>
+            <table class="table">
+                <!-- <tr>
+                    <th>Company</th>
+                    <th>Position</th>
+                    <th>Year</th>
+                </tr> -->
+                <tr>
+                    <td>FinSpace Group</td>
+                    <td>Accountant</td>
+                    <td>2021 - 2021</td>
+                </tr>
+                <tr>
+                    <td>Ferozit LLC</td>
+                    <td>Accountant</td>
+                    <td> 2014 - 2020</td></tr>
+                <tr>
+                    <td>Lviv higher vocational school</td>
+                    <td>Accountant</td>
+                    <td> 2010 - 2010</td></tr>
+                </tr>
+            </table>
+        </div>
 
-        <label for="Email">Ваш Email:</label>
-        <input type="Email" id="Email" placeholder="Введите Email...">
+        <div class="card bg-red">
+            <h2>Моє хобі</h2>
+            <!--<a href="yuotube.html" target="_blank">Повний список</a> ссылка на другую страницу сторінку-->
+            <ul class="link-list">
+                <li>
+                    <a href="https://www.youtube.com/watch?v=p5KZnoeDypA">Group piece  of Jive in the studio a2_sport_dance_club [December 17, 2021]</a>
+                </li>
+
+                <li> 
+                    <a href="https://youtu.be/OJULooIHlNo"> Jive, a2_sport_dance_club [February 18, 2022]</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contack">
+
+            <h2>Зв'язатися зі мною</h2>
+
+            <form action="/"> <!--кнопка відправляє на нашу ж сторінку-->
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше і'мя:</label>
+                        <input type="text" id="name" placeholder="Введите ваше імя...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Email">Ваш email:</label>
+                        <input type="Email" id="Email" placeholder="Введите Email...">
+                    </div>
+                    
+                </div>
+
+                <div class="form-group">
+                    <label for="text">Ваше повідомлення:</label>
+                    <textarea name="Текст" id="text" cols="30" rows="5"></textarea>
+                </div>
+
+                <input class="btn" type="submit">    <!--  кнопка -->
+            </form>
+
+                <div class="position">
+                    <div class="box"></div>
+                </div>
+        </div>
         
-        <br>
+       <!-- <div class="box-model">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div> для прикладу в css--> 
+    
+    </div>
 
-        <label for="text">Ваше повідомлення:</label>
+    <div style="margin-bottom: 500px;"></div> <!--додали простір знизу-->
 
-        <br>
-
-        <textarea name="Текст" id="text" cols="30" rows="5"></textarea>
-
-        <br>
-
-        <input type="submit">    <!--  кнопка -->
-
-    </form>
-    <hr>
 </body>
 
 </html>
